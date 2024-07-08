@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- titre de la page  -->
+    <title>Cours html de zéro</title>
+    <!-- icone de l'onglet -->
+    <link rel="shortcut icon" href="./assets/img/logo-removebg-preview.png" />
+  </head>
+  <body>
+    <!-- ctrl/: nb:one dark pro setting save wrap  https://www.youtube.com/watch?v=68oSyuKVjeU   -->
+    <nav>
+      <!-- ul=unordered list -->
+      <ul>
+        <li>Accueil</li>
+        <li>Boutique</li>
+        <li><a href="#form">Formulaire</a></li>
+      </ul>
+    </nav>
+    <header>
+      <!-- recommander un seul h1 par page il faut se conformer au bonne pratique si on veut que google fasse un bon referencement de notre page type de titre de h1 à h6 -->
+      <h1>Ceci est le titre principal</h1>
+      <p>
+        Texte classique <em>Texte en Italique.</em>
+        <strong>Texte en gras</strong>
+      </p>
+      <!-- lorem +tab pour generer du text -->
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus
+        aperiam non incidunt cum earum esse animi quod soluta? Officiis commodi
+        quisquam obcaecati inventore nulla vero praesentium nostrum magnam culpa
+        in.
+      </p>
+    </header>
+    <main>
+      <section>
+        <h2>Ordered list</h2>
+        <ol>
+          <li>Ceci est une</li>
+          <li>list dans</li>
+          <li>l'ordre</li>
+        </ol>
+      </section>
+      <section>
+        <h3>Image en HTML</h3>
+        <!-- alt quand l'image n'apparait ou pour les malvoyant pas  -->
+        <img src="./assets/img/bg-web.png" height="200" alt="image-section" />
+        <!-- quand on a une partie dont on ne sait comment nommé  -->
+        <div>
+          <h4>Tableeau</h4>
+          <table
+            border="4"
+            cellpadding="10"
+            cellspacing="4"
+            style="text-align: center"
+          >
+            <!-- thead est pour l'entête du tableau -->
+            <thead>
+              <tr>
+                <!-- Maj+alt+flèche du bas pour multiplier les lignes -->
+                <th>Col 1</th>
+                <th>Col 2</th>
+                <th>Col 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2">Cell 1</td>
+                <td>Cell 2</td>
+                <td>Cell 3</td>
+              </tr>
+              <tr>
+                <td colspan="2">Cell 4</td>
+                <td>Cell 5</td>
+                <td>Cell 6</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h5><span>&#128578;</span>Les liens</h5>
+          <!-- anchor ca amène ailleurs , _blank permet de créer un nouvel onglet -->
+          <a href="https://htmlcheatsheet.com" target="_blank"
+            >Html Cheat Sheet</a
+          >
+          <a href="https://www.w3schools.com/" target="_blank"
+            >Html Site Officiel</a
+          >
+          <a href=" https://validator.w3.org/" target="_blank"
+            >Html code validator</a
+          >
+        </div>
+        <div>
+          <!-- pixabay -->
+          <h6><i>&#128679;</i>Local Vidéo</h6>
+          <video
+            src="./assets/video/video.mp4"
+            height="200"
+            width="200"
+            controls
+            muted
+          ></video>
+          <iframe
+            width="200"
+            height="200"
+            src="https://www.youtube.com/embed/68oSyuKVjeU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </section>
+      <section id="form">
+        <h2>Les formulaires</h2>
+        <!-- for et id permet de lier le label à l'input -->
+        <form action="">
+          <label for="name">Nom</label>
+          <input type="text" id="name" placeholder="Entrez votre Nom" />
+
+          <br />
+
+          <label for="age">Entrez votre âge</label>
+          <input type="number" id="age" value="18" />
+
+          <br />
+          <!-- input de type select -->
+          <label for="gender">Genre</label>
+          <select name="gender">
+            <option value="Home">Home</option>
+            <option selected="selected" value="Femme">Femme</option>
+            <option value="Autre">Autre</option>
+          </select>
+
+          <!-- input de type radio avec le même name-->
+          <div>
+            <input type="radio" name="type" id="human" checked />
+            <label for="human">Humain</label>
+
+            <input type="radio" name="type" id="dog" />
+            <label for="dog">Chien</label>
+
+            <input type="radio" name="cat" id="cat" />
+            <label for="human">Chat</label>
+          </div>
+          <textarea
+            placeholder="Votre message..."
+            cols="20"
+            rows="5"
+          ></textarea>
+
+          <!-- input de type checkbox -->
+          <input type="checkbox" name="cgv" id="cgv" />
+          <br />
+          <label for="cgv">Accepter les conditions générales</label>
+
+          <br />
+          <!-- input de type submit permet de valider -->
+          <input
+            type="submit"
+            value="Ceci est un bouton pour valider le formulaire"
+          />
+        </form>
+        <button>ceci est un bouton</button>
+      </section>
+    </main>
+
+    <!-- mail et envoie de fichiers -->
+    <footer>
+      <a href="mailto:sifohouo@gmail.com">Contactez-moi!</a>
+
+      <br />
+
+      <a href="./assets/file/notice.txt" download="Notice"
+        >Téléchargez la notice!</a
+      >
+    </footer>
+  </body>
+</html>
