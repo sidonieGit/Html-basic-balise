@@ -1,4 +1,3 @@
-# HTML-tutorial
+<h1> HTML-TUTORIEL </h1>
 
-< br>
-<a href="https://sidoniegit.github.io/Html-basic-balise/"> Voir Démo< /a>
+<a href="https://sidoniegit.github.io/Html-basic-balise/">Voir Démo</a>
